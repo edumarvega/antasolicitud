@@ -18,7 +18,7 @@ import javax.persistence.StoredProcedureParameter;
             procedureName = "ventas.PKG_ANTAD.LeerSolicitudesPendientes",
             resultClasses = AntaSolicitud.class,
             parameters = { 
-                    @StoredProcedureParameter(mode = ParameterMode.REF_CURSOR, type = ResultSet.class)
+            		 @StoredProcedureParameter(type = void.class, mode = ParameterMode.REF_CURSOR)
             })
 })
 public class AntaSolicitud {
